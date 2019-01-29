@@ -16,7 +16,8 @@ namespace ReactiveUI
         /// <inheritdoc/>
         public void Register(Action<Func<object>, Type> registerFunction)
         {
-            throw new Exception("You are referencing the Portable version of ReactiveUI in an App. Please change your reference to the specific version for your platform found here: https://reactiveui.net/docs/getting-started/installation/nuget-packages");
+            //HACK BLAZOR: to allow creating an Instance of ReactiveObject
+            //throw new Exception("You are referencing the Portable version of ReactiveUI in an App. Please change your reference to the specific version for your platform found here: https://reactiveui.net/docs/getting-started/installation/nuget-packages");
         }
     }
 }
